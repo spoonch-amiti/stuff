@@ -1,0 +1,34 @@
+* {
+	border-radius: 3px;
+	border: none;
+}
+
+window {
+	font-size: 20px;
+	font-family: "Hack";
+	background-color: #171a1f;
+	color: #e5eff5;
+	border: 2px solid #e5eff5;
+}
+
+#entry {
+	padding: 0.25em;
+}
+
+#entry:selected {
+	background-color: #e5eff5;
+	color: #171a1f;
+}
+
+#text:selected {
+	color: #171a1f;
+}
+
+#input {
+	background-color: #292f38;
+	color: #e5eff5;
+	padding: 0.25em;
+	border-top: 2px solid #e5eff5;
+	border-right: 2px solid #e5eff5;
+	border-left: 2px solid #e5eff5;
+}
