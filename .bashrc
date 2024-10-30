@@ -15,12 +15,11 @@ alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 alias ls='ls -a  --color=auto'
 alias grep='grep --color=auto'
-alias balls='startplasma-wayland'
-alias penis='startplasma-x11'
 alias chafa='chafa -f kitty'
 alias zalupa='sudo mount /dev/sdb1 /zalupa'
 alias hypr='Hyprland'
 alias shits='nano /home/spoonch/.config/hypr/hyprland.conf'
+alias goodbyedpi='/home/spoonch/byedpi/ciadpi --disorder 1 --auto=torst --tlsrec 1+s'
 
 alias 2='chafa --fit-width /zalupa/music/2.jpg'
 alias thisolddog='chafa --fit-width /zalupa/music/thisolddog.jpg'
@@ -40,15 +39,7 @@ alias trilogy='chafa --fit-width /zalupa/music/trilogy.jpg'
 alias leatherteeth='chafa --fit-width /zalupa/music/leatherteeth.jpg'
 alias leatherterror='chafa --fit-width /zalupa/music/leatherterror.jpg'
 
-alias bottles='flatpak run com.usebottles.bottles'
-
-alias goodbyedpi='/home/spoonch/byedpi/ciadpi --disorder 1 --auto=torst --tlsrec 1+s'
-
 clear
 neofetch
 
 PS1='\[\e[1;34m\]\u\[\e[1;37m\]@\[\e[1;37m\]\h\[\e[0m\]\[\e[0;37m\]\w\[\e[0m\] $ '
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
