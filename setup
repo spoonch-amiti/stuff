@@ -1,6 +1,8 @@
 cd /home/spoonch/
 
-sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmus chafa imagemagick ttf-liberation noto-fonts-cjk wine winetricks mpv firefox steam kitty bluez bluez-utils cups cups-pdf hplip mesa virtualbox virtualbox-host-modules-arch virtualbox-guest-iso hyprland hyprpaper dunst wofi waybar qt5-wayland qt6-wayland xdg-desktop-portal-hyprland polkit-kde-agent egl-wayland fontconfig jq grim slurp wl-clipboard libnotify libconfig meson ninja networkmanager pavucontrol
+sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmus chafa imagemagick ttf-liberation noto-fonts-cjk wine winetricks mpv firefox steam kitty bluez bluez-utils cups cups-pdf hplip mesa virtualbox virtualbox-host-modules-arch virtualbox-guest-iso hyprland hyprpaper dunst wofi waybar qt5-wayland qt6-wayland xdg-desktop-portal-hyprland polkit-kde-agent egl-wayland fontconfig jq grim slurp wl-clipboard libnotify libconfig meson ninja networkmanager pavucontrol pipewire wireplumber pipewire-alsa pipewire-pulse
+
+systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
 git clone https://github.com/Lucad44/tschuss
 cd tschuss
