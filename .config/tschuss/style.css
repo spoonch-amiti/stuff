@@ -1,0 +1,54 @@
+*{
+    font-family: "Hack Nerd Font";
+    font-weight: bold;
+}
+
+#window {
+    background-color: #171a1f;
+}
+
+button {
+    background-color: #292f38;
+    border: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 100px;
+    color: rgb(255, 85, 0);
+}
+
+button:hover {
+    background-color: #bee8ff;
+    color: #171a1f;
+}
+
+#description-shutdown {
+    font-size: 35px;
+    color: white;
+}
+
+#description-reboot {
+    font-size: 35px;
+    color: white;
+}
+
+#description-logout {
+    font-size: 35px;
+    color: white;
+}
+
+#description-hibernate {
+    font-size: 35px;
+    color: white;
+}
+
+#description-suspend {
+    font-size: 35px;
+    color: white;
+}
+
+#description-lock {
+    font-size: 35px;
+    color: white;
+}
