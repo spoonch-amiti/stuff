@@ -26,11 +26,24 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+#custom-power:hover {
+  color: #ff595c;
+  font-weight: bold;
+}
+
 #pulseaudio:hover {
   color: #bee8ff;
 }
 
 #network:hover {
+  color: #bee8ff;
+}
+
+#cpu:hover {
+  color: #bee8ff;
+}
+
+#memory:hover {
   color: #bee8ff;
 }
 
@@ -46,23 +59,28 @@ button:hover {
   color: #bee8ff;
 }
 
+#window:hover {
+  color: #bee8ff;
+}
 
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
   color: #ced7dc;
+  font-weight: bold;
 }
 
 
 #workspaces button:hover {
-  background-color: #bee8ff;
-  color: #171a1f;
+  color: #bee8ff;
+  font-weight: bold;
 }
 
 #workspaces button.active:hover {
-  background-color: #bee8ff;
+  background-color: #a5dfff;
   color: #171a1f;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 #workspaces button.urgent:hover {
@@ -77,12 +95,16 @@ button:hover {
 
 #workspaces button.active {
   font-weight: bold;
-  color: #bee8ff;
+  background-color: #bee8ff;
+  color: #171a1f;
+  border-radius: 15px;
 }
 
 #workspaces button.urgent {
-  color: #ff595c;
+  background-color: #ff7275;
+  color: #171a1f;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 #mode {
@@ -100,12 +122,28 @@ button:hover {
   padding: 0 10px;
 }
 
+#custom-power {
+  padding: 0 15px;
+  color: #e5eff5;
+  font-weight: bold;
+}
+
 #pulseaudio {
   color: #e5eff5;
   font-weight: bold;
 }
 
 #network {
+  color: #e5eff5;
+  font-weight: bold;
+}
+
+#cpu {
+  color: #e5eff5;
+  font-weight: bold;
+}
+
+#memory {
   color: #e5eff5;
   font-weight: bold;
 }
@@ -130,6 +168,7 @@ button:hover {
   font-weight: bold;
 }
 
+
 .modules-right,
 .modules-left,
 .modules-center {
@@ -142,7 +181,7 @@ button:hover {
 }
 
 .modules-left {
-  padding: 0 10px;
+  padding: 0 0px;
 }
 
 .modules-center {
