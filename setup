@@ -1,0 +1,70 @@
+cd /home/spoonch/
+
+sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmus chafa imagemagick ttf-liberation noto-fonts-cjk wine winetricks mpv firefox steam kitty bluez bluez-utils cups cups-pdf hplip mesa virtualbox virtualbox-host-modules-arch virtualbox-guest-iso hyprland hyprpaper dunst wofi waybar qt5-wayland qt6-wayland xdg-desktop-portal-hyprland polkit-kde-agent egl-wayland fontconfig jq grim slurp wl-clipboard libnotify libconfig meson ninja networkmanager pavucontrol
+
+git clone https://github.com/Lucad44/tschuss
+cd tschuss
+meson setup build
+meson compile -C build
+sudo meson install -C build
+
+cd /home/spoonch/
+
+git clone https://github.com/hufrea/byedpi
+cd byedpi
+make
+
+cd /home/spoonch/
+
+git clone https://aur.archlinux.org/yay.git
+cd /home/spoonch/yay/
+makepkg -si
+
+cd /home/spoonch/
+
+yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot
+
+sudo pacman -S --asdeps libmad
+
+
+
+cd /home/spoonch/stuff
+
+sudo rm /home/spoonch/.bashrc
+mkdir /home/spoonch/.fonts
+mkdir /home/spoonch/.local/share/fonts
+sudo mkdir /usr/share/fonts/TTF
+cp .fonts/*.ttf /home/spoonch/.local/share/fonts
+cp .fonts/*.ttf /home/spoonch/.fonts
+sudo cp .fonts/*.ttf /usr/share/fonts/TTF
+sudo fc-cache -f -v
+cp .bashrc /home/spoonch/
+cp colors-tty.sh /home/spoonch/
+cp 1.png /home/spoonch/
+
+sudo rm -rf /home/spoonch/.config/neofetch/
+sudo rm -rf /home/spoonch/.config/cava/
+sudo rm -rf /home/spoonch/.config/lf/
+sudo rm -rf /home/spoonch/.config/wofi/
+sudo rm -rf /home/spoonch/.config/hypr/
+sudo rm -rf /home/spoonch/.config/kitty/
+sudo rm -rf /home/spoonch/.config/waybar/
+sudo rm -rf /home/spoonch/.config/cmus/
+sudo rm -rf /home/spoonch/.config/tschuss/
+
+sudo cp -rf .config/neofetch/ /home/spoonch/.config/
+sudo cp -rf .config/cava/ /home/spoonch/.config/
+sudo cp -rf .config/lf/ /home/spoonch/.config/
+sudo cp -rf .config/wofi/ /home/spoonch/.config/
+sudo cp -rf .config/hypr/ /home/spoonch/.config/
+sudo cp -rf .config/kitty/ /home/spoonch/.config/
+sudo cp -rf .config/waybar/ /home/spoonch/.config/
+sudo cp -rf .config/cmus/ /home/spoonch/.config/
+sudo cp -rf .config/tschuss/ /home/spoonch/.config/
+
+sudo chown -hR spoonch:spoonch /home/spoonch
+sudo usermod -aG vboxusers spoonch
+
+sudo ln -s /bin/core_perl/shasum /bin/shasum
+
+cowsay 'ok now install dxvk and vkd3d'
