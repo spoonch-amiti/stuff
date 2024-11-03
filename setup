@@ -1,5 +1,7 @@
 cd /home/spoonch/
 
+sudo chown -hR spoonch:spoonch /home/spoonch
+
 sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmus chafa imagemagick ttf-liberation noto-fonts-cjk wine winetricks mpv firefox steam kitty bluez bluez-utils cups cups-pdf hplip mesa virtualbox virtualbox-host-modules-arch virtualbox-guest-iso hyprland hyprpaper dunst wofi waybar qt5-wayland qt6-wayland xdg-desktop-portal-hyprland polkit-kde-agent egl-wayland fontconfig jq grim slurp wl-clipboard libnotify libconfig meson ninja networkmanager pavucontrol pipewire wireplumber pipewire-alsa pipewire-pulse
 
 systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
@@ -24,22 +26,13 @@ makepkg -si
 
 cd /home/spoonch/
 
-yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot
-
+yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot ttf-hack-nerd
 sudo pacman -S --asdeps libmad
-
-
 
 cd /home/spoonch/stuff
 
 sudo rm /home/spoonch/.bashrc
-mkdir /home/spoonch/.fonts
-mkdir /home/spoonch/.local/share/fonts
-sudo mkdir /usr/share/fonts/TTF
-cp .fonts/*.ttf /home/spoonch/.local/share/fonts
-cp .fonts/*.ttf /home/spoonch/.fonts
-sudo cp .fonts/*.ttf /usr/share/fonts/TTF
-sudo fc-cache -f -v
+
 cp .bashrc /home/spoonch/
 cp colors-tty.sh /home/spoonch/
 cp 1.png /home/spoonch/
@@ -64,7 +57,6 @@ sudo cp -rf .config/waybar/ /home/spoonch/.config/
 sudo cp -rf .config/cmus/ /home/spoonch/.config/
 sudo cp -rf .config/tschuss/ /home/spoonch/.config/
 
-sudo chown -hR spoonch:spoonch /home/spoonch
 sudo usermod -aG vboxusers spoonch
 
 sudo ln -s /bin/core_perl/shasum /bin/shasum
