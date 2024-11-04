@@ -7,6 +7,15 @@ sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmu
 
 systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+cd /home/spoonch/
+
+yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot ttf-hack-nerd rar
+sudo pacman -S --asdeps libmad
+
 git clone https://github.com/Lucad44/tschuss
 cd tschuss
 meson setup build
@@ -18,17 +27,6 @@ cd /home/spoonch/
 git clone https://github.com/hufrea/byedpi
 cd byedpi
 make
-
-cd /home/spoonch/
-
-git clone https://aur.archlinux.org/yay.git
-cd /home/spoonch/yay/
-makepkg -si
-
-cd /home/spoonch/
-
-yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot ttf-hack-nerd rar
-sudo pacman -S --asdeps libmad
 
 cd /home/spoonch/stuff
 
