@@ -9,6 +9,8 @@ rm /home/spoonch/.config/autostart/Outline.AppImage.desktop
 
 ./colors-tty.sh
 
+GTK_THEME = Adwaita:dark
+
 alias ..='cd ..'
 alias fucking='sudo'
 alias shutdown='sudo shutdown now'
