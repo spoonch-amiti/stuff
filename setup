@@ -3,7 +3,7 @@ cd /home/spoonch/
 sudo chown -hR spoonch:spoonch /home/spoonch
 
 sudo pacman -Syy
-sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmus chafa imagemagick ttf-liberation noto-fonts-cjk wine winetricks mpv firefox steam kitty bluez bluez-utils cups cups-pdf hplip mesa virtualbox virtualbox-host-modules-arch virtualbox-guest-iso hyprland hyprpaper dunst wofi waybar qt5-wayland qt6-wayland xdg-desktop-portal-hyprland polkit-kde-agent egl-wayland fontconfig jq grim slurp wl-clipboard libnotify libconfig meson ninja networkmanager pavucontrol pipewire wireplumber pipewire-alsa pipewire-pulse p7zip zip unzip unrar
+sudo pacman -S nano man ntfs-3g cowsay wget curl base-devel neofetch lf btop cmus chafa imagemagick ttf-liberation noto-fonts-cjk wine winetricks mpv firefox steam kitty bluez bluez-utils cups cups-pdf hplip mesa virtualbox virtualbox-host-modules-arch virtualbox-guest-iso hyprland hyprpaper dunst wofi waybar qt5-wayland qt6-wayland xdg-desktop-portal-hyprland polkit-kde-agent egl-wayland fontconfig jq grim slurp wl-clipboard libnotify libconfig meson ninja networkmanager pavucontrol pipewire wireplumber pipewire-alsa pipewire-pulse p7zip zip unzip
 
 systemctl --user enable --now pipewire.service wireplumber.service pipewire-pulse.service
 
