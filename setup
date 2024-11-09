@@ -15,7 +15,7 @@ makepkg -si
 
 cd /home/spoonch/
 
-yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot ttf-hack-nerd rar
+yay -S cava phonon-qt6-mpv hplip-plugin virtualbox-ext-oracle hyprpicker-git pistol-git hyprshot ttf-hack-nerd rar bluetui
 sudo pacman -S --asdeps libmad
 
 git clone https://github.com/Lucad44/tschuss
