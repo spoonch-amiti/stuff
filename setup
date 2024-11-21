@@ -1,5 +1,4 @@
 # firefox theme: https://color.firefox.com/?theme=XQAAAAK_AgAAAAAAAABBqYhm849SCicxcUF-LXcGHf3p79EhVPZCINr2b0QJdd0Fni-X4_HvDFAWX4TMuV46nO7rpo01h_QxysDg2EleleJop-S_Kiv4Fmi504U8MoCq5HswikqHjkD1tMYk6YX5_cy5lLboFJjGFpKKl4YvAQz9-fO6R5oTeiXC2Qp0HRoT7N6Lbd6CtI8-pOHRhF531Y79vVZzTLmnV7kHlpxmkjQ_Hq6GcuNivRrk79UqEsEaVUrT02uwOA_NM6VqsR9sjb5CfueFBNDYHZntUk99ZTgsdi1WPkBFQ-FIzv8DEIdgSy58wiKpPcyRa_02rgZdESHC3HEtv7ECvp4Ujblu7B6_OegcleyIFGBwFn3Wg4ZA3aWOPD-3M0VHxKozhCVMZVq1G3pOU56tAo5LsyA4RI2GJscZR9MyIYErMMk1tie0b2VsbwvzEX8o2_R14NWEDrDLEX_KgZP0hTQ8j1KjhdOQUuDQb__XKGVY
-# https://termbin.com/8p3r
 
 cd /home/spoonch/
 
@@ -35,9 +34,9 @@ cd /home/spoonch/stuff
 
 sudo rm /home/spoonch/.bashrc
 
-cp .bashrc /home/spoonch/
-cp colors-tty.sh /home/spoonch/
-cp 1.png /home/spoonch/
+sudo cp .bashrc /home/spoonch/
+sudo cp colors-tty.sh /home/spoonch/
+sudo cp 1.png /home/spoonch/
 
 sudo rm -rf /home/spoonch/.config/neofetch/
 sudo rm -rf /home/spoonch/.config/cava/
