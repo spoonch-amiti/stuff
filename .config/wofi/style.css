@@ -1,14 +1,15 @@
 * {
-	border-radius: 3px;
+	border-radius: 15px;
 	border: none;
 }
 
 window {
 	font-size: 20px;
 	font-family: "Hack Nerd Font";
+        font-weight: bold;
 	background-color: #171a1f;
-	color: #e5eff5;
-	border: 2px solid #e5eff5;
+	color: #ced7dc;
+	border: 2px solid #bee8ff;
 }
 
 #entry {
@@ -16,8 +17,10 @@ window {
 }
 
 #entry:selected {
-	background-color: #e5eff5;
+	background-color: #bee8ff;
 	color: #171a1f;
+        border: none;
+        border-radius: 0px;
 }
 
 #text:selected {
@@ -25,10 +28,8 @@ window {
 }
 
 #input {
-	background-color: #292f38;
-	color: #e5eff5;
+	background-color: #171a1f;
+        color: #ced7dc;
 	padding: 0.25em;
-	border-top: 2px solid #e5eff5;
-	border-right: 2px solid #e5eff5;
-	border-left: 2px solid #e5eff5;
+	border: 2px solid #bee8ff;
 }
