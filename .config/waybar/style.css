@@ -1,172 +1,95 @@
 * {
-  font-family: "Hack Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Hack Nerd Font", sans-serif;
   font-size: 13px;
+  font-weight: bold;
 }
-
 window#waybar {
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 13px;
-  transition-property: background-color;
-  transition-duration: .5s;
 }
-
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 0px transparent;
-  /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 0;
 }
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
   text-shadow: inherit;
- /* box-shadow: inset 0 0px #000000;*/
 }
 
-/* you can set a style on hover for any module like this */
-#custom-power:hover {
-  color: #ff595c;
-  font-weight: bold;
-}
 
-#pulseaudio:hover {
-  color: #bee8ff;
-}
-
-#network:hover {
-  color: #bee8ff;
-}
-
-#cpu:hover {
-  color: #bee8ff;
-}
-
-#memory:hover {
-  color: #bee8ff;
-}
-
-#temperature:hover {
-  color: #bee8ff;
-}
-
-#battery:hover {
-  color: #bee8ff;
-}
-
-#clock:hover {
-  color: #bee8ff;
-}
-
-#window:hover {
-  color: #bee8ff;
-}
 
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
   color: #ced7dc;
-  font-weight: bold;
 }
-
-
 #workspaces button:hover {
   color: #bee8ff;
-  font-weight: bold;
 }
-
 #workspaces button.active:hover {
   background-color: #a5dfff;
   color: #171a1f;
-  font-weight: bold;
   border-radius: 15px;
 }
-
 #workspaces button.urgent:hover {
   background-color: #ff595c;
   color: #171a1f;
 }
-
 #workspaces button.focused {
   background-color: #292f38;
   box-shadow: inset 0 -3px #ffffff;
 }
-
 #workspaces button.active {
-  font-weight: bold;
   background-color: #bee8ff;
   color: #171a1f;
   border-radius: 15px;
 }
-
 #workspaces button.urgent {
   background-color: #ff7275;
   color: #171a1f;
-  font-weight: bold;
   border-radius: 15px;
 }
-
 #mode {
   background-color: #64727D;
   box-shadow: inset 0 -3px #ffffff;
 }
 
+
+
 #clock,
 #battery,
 #cpu,
 #memory,
+#backlight,
 #temperature,
 #network,
 #pulseaudio {
   padding: 0 10px;
+  color: #e5eff5;
 }
-
+#window:hover,
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#backlight:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover {
+  color: #bee8ff;
+}
 #custom-power {
   padding: 0 15px;
   color: #e5eff5;
   font-weight: bold;
 }
-
-#pulseaudio {
-  color: #e5eff5;
-  font-weight: bold;
+#custom-power:hover {
+  color: #ff595c;
+}
+#pulseaudio.muted {
+  color: #ced7dc;
 }
 
-#network {
-  color: #e5eff5;
-  font-weight: bold;
-}
-
-#cpu {
-  color: #e5eff5;
-  font-weight: bold;
-}
-
-#memory {
-  color: #e5eff5;
-  font-weight: bold;
-}
-
-#temperature {
-  color: #e5eff5;
-  font-weight: bold;
-}
-
-#battery {
-  color: #e5eff5;
-  font-weight: bold;
-}
-
-#clock {
-  color: #e5eff5;
-  font-weight: bold;
-}
-
-#window {
-  color: #e5eff5;
-  font-weight: bold;
-}
 
 
 .modules-right,
@@ -175,54 +98,41 @@ button:hover {
   background-color: #292f38;
   border-radius: 15px;
 }
-
-.modules-right {
+.modules-center {
   padding: 0 10px;
 }
-
+.modules-right {
+  padding: 0 5px;
+}
 .modules-left {
   padding: 0 0px;
 }
 
-.modules-center {
-  padding: 0 10px;
-}
+
 
 #battery.charging,
 #battery.plugged {
   background-color: #292f38;
   color: #d5ffa6;
-  font-weight: bold;
 }
-
 @keyframes blink {
   to {
     color: #000000;
   }
 }
-
-/* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
   background-color: #ff595c;
   color: #e5eff5;
-  font-weight: bold;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
 #battery.warning{
   background-color: #292f38;
   color: #fbd0ac;
-  font-weight: bold;
 }
-
 label:focus {
   background-color: #000000;
-}
-
-#pulseaudio.muted {
-  color: #ced7dc;
 }
